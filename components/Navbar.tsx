@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getRequestAccessMailto } from "@/lib/mail";
 
 export default function Navbar() {
   return (
@@ -7,7 +8,7 @@ export default function Navbar() {
         
         {/* Logo -> torna alla landing */}
         <Link
-          href="/"
+          href="/landing"
           className="text-lg tracking-wide font-medium hover:opacity-80 transition"
         >
           ConcertOS
@@ -30,7 +31,7 @@ export default function Navbar() {
 
         {/* CTA */}
         <a
-          href="mailto:founders@concertos.live"
+          href={getRequestAccessMailto()}
           className="text-sm px-4 py-2 border border-white/20 rounded-full hover:bg-white hover:text-black transition"
         >
           Request Access

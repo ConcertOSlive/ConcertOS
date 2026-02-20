@@ -1,7 +1,13 @@
-import HowItWorks from "@/features/howItWorks/HowItWorks";
+import Navbar from "../../components/Navbar";
+import HowItWorks from "./sections/HowItWorks";
 
 export default function HowItWorksPage() {
-  return <HowItWorks />;
+  return (
+    <main className="bg-black text-white">
+      <Navbar />
+      <HowItWorks />
+    </main>
+  );
 }
 
 export const metadata = {

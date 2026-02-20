@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getRequestAccessMailto } from "@/lib/mail";
 
 export default function CTA() {
   return (
@@ -7,8 +8,8 @@ export default function CTA() {
         Ready to start your premium concert?
       </h2>
       <Link
-        href="/signup"
-        className="inline-block mt-4 px-8 py-4 bg-pink-500 text-black font-semibold rounded-xl hover:bg-pink-600 transition"
+        href={getRequestAccessMailto()}
+        className="inline-block mt-4 px-8 py-4 bg-brandsecondary text-black font-semibold rounded-xl hover:bg-brandprimary transition"
       >
         Request Early Access
       </Link>

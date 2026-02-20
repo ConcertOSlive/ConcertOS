@@ -1,3 +1,5 @@
+import { getRequestAccessMailto } from "@/lib/mail";
+
 export default function ContactSection() {
   return (
     <section className="min-h-screen bg-black text-white px-6 py-32">
@@ -28,7 +30,7 @@ export default function ContactSection() {
           </p>
 
           <a
-            href="mailto:founders@concertos.live"
+            href={getRequestAccessMailto()}
             className="text-2xl md:text-3xl font-light hover:opacity-70 transition"
           >
             founders@concertos.live
@@ -42,7 +44,7 @@ export default function ContactSection() {
         {/* Secondary CTA */}
         <div className="mt-16">
           <a
-            href="mailto:founders@concertos.live?subject=Concert Inquiry"
+            href={getRequestAccessMailto()}
             className="inline-block px-8 py-4 border border-white/20 rounded-full
                        hover:bg-white hover:text-black transition text-sm tracking-wide"
           >

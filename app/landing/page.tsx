@@ -1,11 +1,11 @@
-import ContactSection from "./sections/ContactSection";
 import Navbar from "../../components/Navbar";
+import Hero from "./sections/Hero";
 
-export default function ForArtists() {
+export default function LandingPage() {
   return (
     <main className="bg-black text-white">
       <Navbar />
-      <ContactSection />
+      <Hero />
     </main>
   );
 }

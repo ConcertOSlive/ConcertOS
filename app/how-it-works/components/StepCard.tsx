@@ -11,7 +11,7 @@ export default function StepCard({
 }) {
   return (
     <div className={`${bgClass} p-12 rounded-3xl shadow-md flex flex-col md:flex-row items-start gap-8 transition hover:bg-white/10`}>
-      <div className="text-4xl font-bold text-pink-500 md:w-16 md:flex-shrink-0">
+      <div className="text-4xl font-bold text-brandsecondary md:w-16 md:flex-shrink-0">
         {stepNumber && stepNumber.toString().padStart(2, "0")}
       </div>
       <div>

@@ -28,7 +28,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="/how-it-works"
+            href="/landing/how-it-works"
             className="px-8 py-4 border border-white/20 rounded-full text-sm text-white/70 hover:text-white hover:border-white/40 transition"
           >
             Learn More

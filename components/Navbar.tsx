@@ -16,15 +16,15 @@ export default function Navbar() {
 
         {/* Navigation */}
         <div className="hidden md:flex items-center gap-8 text-sm text-white/70">
-          <Link href="/for-artists" className="hover:text-white transition">
+          <Link href="/landing/for-artists" className="hover:text-white transition">
             For Artists
           </Link>
 
-          <Link href="/how-it-works" className="hover:text-white transition">
+          <Link href="/landing/how-it-works" className="hover:text-white transition">
             How it Works
           </Link>
 
-          <Link href="/contact" className="hover:text-white transition">
+          <Link href="/landing/contact" className="hover:text-white transition">
             Contact
           </Link>
         </div>
